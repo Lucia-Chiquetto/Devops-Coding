@@ -8,5 +8,5 @@ async def root():
 
 @app.get("/teste1")
 async def funcaoteste():
-    return {"teste": "deu Berto"}
+    return {"teste": "deu certo"}
 
