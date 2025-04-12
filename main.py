@@ -2,11 +2,11 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/helloword")
 async def root():
     return {"message": "Hello World"}
 
-@app.get("/teste1")
+@app.get("/endpoint")
 async def funcaoteste():
     return {"teste": "deu certo"}
 
