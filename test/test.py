@@ -10,12 +10,11 @@ async def test_root():
 
 
 @pytest.mark.asyncio
-async def teste_funcaoteste():
+async def test_funcaoteste():
     with patch('random.randint', return_value=12345):
         result = await funcaoteste()
 
-    assert result == {"test": True, "num_aleatorio": 12345}
-
+    assert result == {"teste": True, "num_aleatorio": 12345}
 
 @pytest.mark.asyncio
 async def test_update_estudante_negativo():
@@ -37,5 +36,5 @@ async def test_delete_estudante_negativo():
 
 @pytest.mark.asyncio
 async def test_delete_estudante_positivo():
-    result = await delete_estudante (5)
+    result = await delete_estudante(5)
     assert result
