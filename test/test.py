@@ -22,7 +22,7 @@ async def test_create_estudante():
     result = await create_estudante(estudante_teste)
     assert estudante_teste == result
 
-    
+
 @pytest.mark.asyncio
 async def test_update_estudante_negativo():
     result = await update_estudante (-5)
