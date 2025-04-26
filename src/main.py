@@ -18,7 +18,7 @@ async def root():
 
 @app.get("/funcaoteste")
 async def funcaoteste():
-    return {"teste": True, "num_aleatorio": random.random(0, 2000)}
+    return {"test": True, "num_aleatorio": random.random(0, 2000)}
 
 
 @app.post("/estudantes/cadastro")
@@ -27,7 +27,7 @@ async def create_estudante(estudante: Estudante):
 
 
 @app.put("/estudantes/update/{id_estudatante}")
-async def update_item(id_estudante: int):
+async def update_estudante(id_estudante: int):
     return id_estudante > 0
 
 
